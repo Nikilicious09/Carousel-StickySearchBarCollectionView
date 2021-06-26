@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ListCell" customModule="AssesmentProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="404" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="404" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wpK-iO-AJT">
+                        <rect key="frame" x="0.0" y="0.0" width="404" height="50"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BI6-Gh-Zjs">
+                                <rect key="frame" x="8" y="5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="ab3-cT-BlE"/>
+                                    <constraint firstAttribute="height" constant="40" id="rFG-MZ-eOb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7Z-Pf-vnT">
+                                <rect key="frame" x="56" y="0.0" width="348" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="348" id="9mJ-YR-ymz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="p7Z-Pf-vnT" secondAttribute="bottom" id="IQL-1o-Gdh"/>
+                            <constraint firstItem="BI6-Gh-Zjs" firstAttribute="leading" secondItem="wpK-iO-AJT" secondAttribute="leading" constant="8" id="JS6-za-yv5"/>
+                            <constraint firstItem="p7Z-Pf-vnT" firstAttribute="top" secondItem="wpK-iO-AJT" secondAttribute="top" id="Qt9-a7-Liy"/>
+                            <constraint firstItem="p7Z-Pf-vnT" firstAttribute="leading" secondItem="BI6-Gh-Zjs" secondAttribute="trailing" constant="8" id="RhT-81-nzU"/>
+                            <constraint firstItem="BI6-Gh-Zjs" firstAttribute="top" secondItem="wpK-iO-AJT" secondAttribute="top" constant="5" id="gPM-Sf-t3j"/>
+                            <constraint firstAttribute="bottom" secondItem="BI6-Gh-Zjs" secondAttribute="bottom" constant="5" id="o80-0w-0cv"/>
+                            <constraint firstAttribute="trailing" secondItem="p7Z-Pf-vnT" secondAttribute="trailing" id="vSy-Mr-CL6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="wpK-iO-AJT" secondAttribute="bottom" id="IaW-gt-ppw"/>
+                <constraint firstItem="wpK-iO-AJT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="K8g-gg-aKy"/>
+                <constraint firstItem="wpK-iO-AJT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="b66-yn-qEv"/>
+                <constraint firstAttribute="trailing" secondItem="wpK-iO-AJT" secondAttribute="trailing" id="cqh-os-8Mk"/>
+            </constraints>
+            <size key="customSize" width="404" height="50"/>
+            <connections>
+                <outlet property="listImageView" destination="BI6-Gh-Zjs" id="eux-eQ-hFp"/>
+                <outlet property="listName" destination="p7Z-Pf-vnT" id="zUS-k6-WmX"/>
+            </connections>
+            <point key="canvasLocation" x="233.33333333333334" y="101.78571428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
